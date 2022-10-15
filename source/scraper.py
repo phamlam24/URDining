@@ -2,7 +2,7 @@ import json
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
  
-# # Input day, month, and year
+ # # Input day, month, and year
 # year = input("enter year: ")
 # month = input("enter month: ")
 # day = input("enter date: ")
@@ -14,7 +14,6 @@ from urllib.request import urlopen
 #     hall_link = 'douglass-dining'
 # else:
 #     hall_link = 'danforth-dining-center'
- 
 # # Initialize Beautiful Soup
 # url = "https://dining.rochester.edu/locations/" + hall_link + "/?date=" + year + "-" + month + "-" + day
 # page = urlopen(url)
