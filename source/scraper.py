@@ -5,7 +5,7 @@ from urllib.request import urlopen
 year = input("enter year: ")
 month = input("enter month: ")
 day = input("enter date: ")
- 
+      
 # Input dining hall (Douglass or Danforth)
 hall = input("Enter dining station (lowercase): ")
 if hall == 'douglass':
