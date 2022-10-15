@@ -60,7 +60,7 @@ for times in content.find_all('div', class_ = "c-tab"):
             all_food[i][j].append(food.get_text())
         j += 1
     i += 1
- 
+
 for stations in all_stations:
     for station in stations:
         f.write(station + ' | ')
@@ -75,5 +75,7 @@ for times in all_food:
         f.write("\n")
     f.write('\n')
  
- 
-
+#V3: Store all data in a dictionary in order to parse to JSON
+foodData = {
+    
+}
