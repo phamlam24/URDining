@@ -52,4 +52,4 @@ def time_extract(s):
     return time
     
 
-print(time_extract('dinner(12am-8:30am)'))
+#print(time_extract('dinner(12am-8:30am)'))
