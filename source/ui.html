@@ -27,22 +27,54 @@ h2 {
         <button id="button" type="button">Begin</button>
     </div>
 </div><br>
-<div class="flex-container" style="display: flex; align-items:center; justify-content: center; flex-direction: column;">
-    <div id = "doug">
-        <b><i>Choose your meal: </b></i>
+<div id = "doug" class="flex-container" style="display: flex; align-items:center; justify-content: center; flex-direction: column;">
+    <div>
+        <b><i>Choose your meal:  </b></i>
         <button id="Continental" type="button">Continental</button>
         <button id="Breakfast" type="button">Breakfast</button>
         <button id="Lunch" type="button">Lunch</button>
         <button id="Dinner" type="button">Dinner</button>
         <button id="Late Dinner" type="button">Late Dinner</button>
     </div>
-    <div id = "dan">
-        <b><i>Choose your meal: </b></i>
-        <button id="Breakfast" type="button">Breakfast</button>
-        <button id="Lunch" type="button">Lunch</button>
-        <button id="Dinner" type="button">Dinner</button>
+</div><br>
+<div id = "dan" class="flex-container" style="display: flex; align-items:center; justify-content: center; flex-direction: column;">
+    <div>
+        <b><i>Choose your meal:  </b></i>
+        <button id="Breakfast1" type="button">Breakfast</button>
+        <button id="Lunch1" type="button">Lunch</button>
+        <button id="Dinner1" type="button">Dinner</button>
     </div>
 </div>
+<div class="flex-container" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+    <div id = "food">
+        <div>
+            <input type="checkbox" id="Eggs" name="Eggs" value="Eggs">
+            <label for "Eggs"> Egg</label>
+        </div><br>
+        <div>
+            <input type="checkbox" id="Bread" name="Bread" value="Bread">
+            <label for "Bread"> Bread</label>
+        </div><br>
+        <div>
+            <input type="checkbox" id="Beef" name="Beef" value="Beef">
+            <label for "Beef"> Beef</label>
+        </div><br>
+        <div>
+            <input type="checkbox" id="Pork" name="Pork" value="Pork">
+            <label for "Pork"> Pork</label>
+        </div><br>
+        <button id="Submit" type="button" >Submit</button><br>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+    </div> 
+</div>
+
+
 <datalist id="halls">
     <option value="Douglass">
     <option value="Danforth">
@@ -52,8 +84,10 @@ h2 {
 <script>
 var doug = document.getElementById("doug")
 var dan = document.getElementById("dan")
+var food = document.getElementById("food")
 doug.style.display = "none"
 dan.style.display = "none"
+food.style.display = "none"
 function showDoug() {
     doug.style.display = "flex"
 }
@@ -68,7 +102,17 @@ function myFunction() {
         showDan()
     }
 }
+function showFood(){
+    food.style.display = "flex"
+}
 document.getElementById("button").onclick = function() {myFunction()}
-  
+document.getElementById("Continental").onclick = function() {showFood()}
+document.getElementById("Breakfast").onclick = function() {showFood()}
+document.getElementById("Lunch").onclick = function() {showFood()}
+document.getElementById("Dinner").onclick = function() {showFood()}
+document.getElementById("Late Dinner").onclick = function() {showFood()}
+document.getElementById("Breakfast1").onclick = function() {showFood()}
+document.getElementById("Lunch1").onclick = function() {showFood()}
+document.getElementById("Dinner1").onclick = function() {showFood()}
 
 </script>
